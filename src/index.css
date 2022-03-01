@@ -1,13 +1,396 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* fonts */
+@font-face {
+  font-family: "CircularStd";
+  src: local("CircularStd"),
+    url(./assets/fonts/CircularStd-Book.woff) format("woff");
+}
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* colors */
+  --main-uipl-color: #1997aa;
+  --main-white-color: #ffffff;
+  --main-black-color: #000000;
+  --main-black-home-video: #010001;
+  --main-black-rgb1-color: rgba(0, 0, 0, 0.1);
+  --main-black-rgb8-color: rgba(0, 0, 0, 0.8);
+  --main-black-rgb15-color: rgba(0, 0, 0, 0.15);
+  --main-black-2-color: #010001;
+  --main-black-3-color: #0e0e0e;
+  --main-black-4-color: #1a1a1a;
+  --main-gray-dip-color: #232636;
+  --main-gray-thin-color: #464646;
+  --main-gray-dark-color: #434a5b;
+  --main-gray-black-color: #444444;
+  --main-light-gray-color: #efefef;
+  --main-gray-light-color: #dedede;
+  --main-gray-border-color: #787878;
+  --main-light-border-color: #bfbfbf;
+  --main-blue-sky-color: #89a7bf;
+  --main-blue-dip-color: #00acff;
+  --main-red-dip-color: #be202f;
+  --main-orange-color: #fd7800;
+  --main-blue-dark-color: #00578b;
+  --main-green-color: #00d99e;
+  --main-green-color: #00d99e;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
+  /* fonts  */
+  --headingFont: "Roboto Condensed", Sans-Serif;
+  --bodyFont: "Cabin", Sans-Serif;
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  /* rest of the vars */
+  --backgroundColor: var(--grey-50);
+  --textColor: var(--grey-900);
+  --borderRadius: 0.25rem;
+  --letterSpacing: 1px;
+  --transition: 0.3s ease-in-out all;
+  --max-width: 1920px;
+  --fixed-width: 85%;
+  --fluid-width: 90vw;
+  --breakpoint-lg: 992px;
+  --nav-height: 6rem;
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--backgroundColor);
+  font-family: "CircularStd";
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--textColor);
+}
+
+* {
+  outline: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a:not([href]):not([tabindex]) {
+  color: #000000;
+}
+a,
+button,
+input,
+select,
+textarea,
+label,
+summary {
+  touch-action: manipulation;
+}
+article,
+aside,
+cite,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+progress {
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+iframe,
+object,
+embed {
+  max-width: 100%;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+.tabindex:focus {
+  outline: none;
+}
+p {
+  font-family: "CircularStd";
+  font-size: 18px;
+  line-height: 1.63;
+  margin: 0;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--main-black-rgb8-color);
+  word-wrap: break-word;
+  -webkit-text-decoration-skip: objects;
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300ms;
+  -moz-transition: all ease-in-out 300ms;
+  -ms-transition: all ease-in-out 300ms;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+a:active,
+a:focus,
+a:hover {
+  color: var(--main-black-color);
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0.3125em 0 1.09375em 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+h1 {
+  font-size: 1.625em;
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.3125em;
+}
+h3 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+h4,
+h5,
+h6 {
+  font-size: 1em;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.text-regularbold {
+  font-family: "CircularStd";
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+.text-regularnormal {
+  font-family: "CircularStd";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+/* buttons */
+
+.btn-white {
+  position: relative;
+  display: block;
+  justify-content: center;
+  width: 200px;
+  height: 58px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 13px 33px 14px 33px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 0;
+  text-transform: uppercase;
+  color: #000;
+  --webkit-transform: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: initial;
+}
+.btn-white:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  content: " ";
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.btn-white:hover {
+  color: white;
+}
+.btn-white:hover:before {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+.btn-white > span {
+  position: relative;
+}
+
+/* Odometer Css */
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.odometer.odometer-auto-theme,
+.odometer.odometer-theme-minimal {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit,
+.odometer.odometer-theme-minimal .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-digit-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon {
+  display: block;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value,
+.odometer.odometer-theme-minimal .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+.odometer.odometer-auto-theme
+  .odometer-digit
+  .odometer-value.odometer-last-value,
+.odometer.odometer-theme-minimal
+  .odometer-digit
+  .odometer-value.odometer-last-value {
+  position: absolute;
+}
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+}
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating
+  .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal.odometer-animating-up.odometer-animating
+  .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal.odometer-animating-down
+  .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating
+  .odometer-ribbon-inner,
+.odometer.odometer-theme-minimal.odometer-animating-down.odometer-animating
+  .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 2s;
+  -moz-transition: -moz-transform 2s;
+  -ms-transition: -ms-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
 }
