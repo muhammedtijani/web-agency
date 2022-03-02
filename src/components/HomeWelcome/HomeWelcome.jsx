@@ -6,8 +6,8 @@ const HomeWelcome = () => {
   return (
     <Wrapper>
       <Container>
-        <Row>
-          <Column>
+        <div className="home-welcome-row">
+          <div className="home-welcome-column">
             <div className="desc-wrap">
               <h1 className="title">
                 How we stand out - We are proactive Expert
@@ -28,13 +28,11 @@ const HomeWelcome = () => {
             <Button className="btn-home-welcome">
               <span>REQUEST CONSULTATION</span>
             </Button>
-          </Column>
-          <Column>
-            <div className="pic-wrap">
-              <img src={homeWelcomePic} alt="homepic" />
-            </div>
-          </Column>
-        </Row>
+          </div>
+          <div className="pic-wrap">
+            <img src={homeWelcomePic} alt="homepic" />
+          </div>
+        </div>
       </Container>
     </Wrapper>
   );

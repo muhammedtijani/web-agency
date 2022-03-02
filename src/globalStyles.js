@@ -17,9 +17,13 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 `;
 export const Column = styled.div`
   display: flex;
