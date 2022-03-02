@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   .container {
     width: 1450px;
     display: flex;
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 640px) {
       width: 100%;
       flex-wrap: wrap;
     }

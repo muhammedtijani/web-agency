@@ -26,27 +26,29 @@ const Navbar = () => {
             <FaBars />
           </button>
         </div>
-        <ul className="nav-links">
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              Services
-            </button>
-          </li>
-          <li>
-            <button className="how-we-work-btn">How we work</button>
-          </li>
+        <div className="links-wrapper">
+          <ul className="nav-links">
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                Services
+              </button>
+            </li>
+            <li>
+              <button className="how-we-work-btn">How we work</button>
+            </li>
 
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              Portfolio
-            </button>
-          </li>
-          <li>
-            <button className="link-btn" onMouseOver={displaySubmenu}>
-              Company
-            </button>
-          </li>
-        </ul>
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                Portfolio
+              </button>
+            </li>
+            <li>
+              <button className="link-btn" onMouseOver={displaySubmenu}>
+                Company
+              </button>
+            </li>
+          </ul>
+        </div>
         <button className="btn-white contact-btn">
           <span>CONTACT US</span>
         </button>

@@ -1,20 +1,13 @@
 import styled from "styled-components";
 
 export const HeroSection = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  min-height: 500px;
-  background-position: center;
-  background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
-  flex-wrap: wrap;
+  position: relative;
+  height: auto;
+  min-height: 400px;
 
-  @media screen and (max-width: 640px) {
-    height: auto;
-    min-height: 400px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .hero-video {
     top: 0;
@@ -23,9 +16,6 @@ export const HeroSection = styled.section`
     left: 0;
     position: absolute;
     z-index: -1;
-    @media screen and (max-width: 640px) {
-      max-height: 400px;
-    }
   }
   video {
     width: 100%;
@@ -37,39 +27,25 @@ export const HeroSection = styled.section`
   .hero-content-wrapper {
     position: relative;
     top: 15%;
-    padding: 0 15px;
+    padding: 0 25px;
+    margin: auto;
     z-index: 3;
-    flex: 0 0 75%;
-    max-width: 75%;
 
-    @media screen and (max-width: 800px) {
-      top: 15%;
-      flex: 0 0 95%;
-      max-width: 95%;
-    }
-
-    @media screen and (max-width: 640px) {
-      .hero-button-container {
-        display: none;
-      }
-    }
-  }
-
-  .hero-title {
-    margin-bottom: 40px;
-    font-family: "CircularStd";
-    font-size: 48px;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.25;
-    letter-spacing: 2px;
-    opacity: 1;
-
-    @media screen and (max-width: 640px) {
-      margin-bottom: 25px;
+    .hero-title {
+      margin-bottom: 5px;
+      font-family: "CircularStd";
       font-size: 30px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.25;
+      letter-spacing: 2px;
+      opacity: 1;
+    }
+    .hero-button-container {
+      display: none;
     }
   }
+
   .hero-overlay {
     position: absolute;
     top: 0;
@@ -78,9 +54,24 @@ export const HeroSection = styled.section`
     left: 0;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
+  }
 
-    @media screen and (max-width: 640px) {
-      max-height: 400px;
+  @media screen and (min-width: 640px) {
+    height: 100vh;
+    min-height: 500px;
+
+    .hero-content-wrapper {
+      top: 35%;
+      padding: 0 15px;
+      flex: 0 0 75%;
+      max-width: 85%;
+
+      .hero-button-container {
+        display: block;
+      }
+      .hero-title {
+        font-size: 48px;
+      }
     }
   }
 `;

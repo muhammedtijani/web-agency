@@ -18,6 +18,7 @@ const Hero = () => {
         />
       </div>
       <div className="hero-overlay" />
+
       <div className="hero-content-wrapper">
         <div className="hero-title">
           Your technology partner for innovative and impactful digital

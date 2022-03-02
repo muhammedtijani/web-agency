@@ -23,12 +23,13 @@ const Wrapper = styled.section`
   .sidebar {
     width: 95vw;
     height: 95vh;
-    max-width: var(--fixed-width);
+    max-width: 80%;
     background: var(--white);
     border-radius: var(--radius);
     box-shadow: var(--dark-shadow);
     position: relative;
     padding: 4rem 2rem;
+    z-index: 2;
   }
   .close-btn {
     font-size: 2rem;
@@ -38,6 +39,7 @@ const Wrapper = styled.section`
     position: absolute;
     top: 1rem;
     right: 1rem;
+    padding: 0.5rem;
     cursor: pointer;
   }
   .sidebar article {

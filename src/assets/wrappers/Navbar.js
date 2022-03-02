@@ -1,23 +1,28 @@
 import styled from "styled-components";
 
 const Wrapper = styled.nav`
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  position: relative;
-  z-index: 2;
+  position: fixed;
+  width: 100%;
+  padding: 0;
+  transition: all ease-in-out 200ms;
+  z-index: 99;
 
   .nav-center {
-    width: 90vw;
-    max-width: var(--max-width);
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .toggle-btn {
+    z-index: 1;
   }
 
   .nav-links {
@@ -39,12 +44,21 @@ const Wrapper = styled.nav`
       display: grid;
       grid-template-columns: auto 1fr auto;
       align-items: center;
+      position: relative;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     .toggle-btn {
       display: none;
     }
     .contact-btn {
       display: inline-block;
+    }
+
+    .links-wrapper {
+      margin-left: auto;
     }
     .nav-links {
       display: block;
@@ -55,6 +69,8 @@ const Wrapper = styled.nav`
       height: 100%;
       display: grid;
       align-items: center;
+      position: relative;
+      margin-right: 25px;
     }
     .nav-links li {
       height: 100%;

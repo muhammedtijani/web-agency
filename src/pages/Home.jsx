@@ -1,3 +1,4 @@
+import { BiLock } from "react-icons/bi";
 import CaseStudies from "../components/Casestudies/CaseStudies.jsx";
 import Count from "../components/Count/Count.jsx";
 import HalfSection from "../components/HalfSection/HalfSection.jsx";
@@ -9,9 +10,9 @@ import Process from "../components/Process/Process.jsx";
 const Home = () => {
   return (
     <>
-      <Hero />
-      {/* <Count />
-      <HomeWelcome />
+      <Hero style={{ display: "block" }} />
+      <Count />
+      {/*<HomeWelcome />
       <HalfSection name="Core" title="services" />
       <HomeService />
       <HalfSection name="Portfolio that" title="speak!" />

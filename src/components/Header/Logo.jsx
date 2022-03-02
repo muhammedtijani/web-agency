@@ -1,7 +1,12 @@
 import logo from "../../assets/images/logo-white.png";
+import { Wrapper } from "../../assets/wrappers/Logo";
 
 const Logo = () => {
-  return <img src={logo} alt="colabo" className="logo" />;
+  return (
+    <Wrapper href="/">
+      <img src={logo} alt="colabo" className="logo" />
+    </Wrapper>
+  );
 };
 
 export default Logo;

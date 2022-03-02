@@ -5,6 +5,7 @@ import Odometer from "react-odometerjs";
 
 const Count = () => {
   const [value, setValue] = useState(0);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setValue(10);
@@ -27,7 +28,7 @@ const Count = () => {
             <p className="number">
               <Odometer value={value} format="(,dd)" />+
             </p>
-            <p>Years in the business</p>
+            <p>Solutions delivered</p>
           </div>
         </div>
         <div className="home-count-item">
@@ -35,7 +36,7 @@ const Count = () => {
             <p className="number">
               <Odometer value={value} format="(,dd)" />+
             </p>
-            <p>Years in the business</p>
+            <p>Technology exports</p>
           </div>
         </div>
         <div className="home-count-item">
@@ -43,7 +44,7 @@ const Count = () => {
             <p className="number">
               <Odometer value={value} format="(,dd)" />+
             </p>
-            <p>Years in the business</p>
+            <p>Business delivered</p>
           </div>
         </div>
       </div>
