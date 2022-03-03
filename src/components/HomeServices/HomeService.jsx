@@ -11,16 +11,14 @@ const HomeService = () => {
             const { icon, title, desc, link } = item;
             return (
               <Column className="column-box-item" key={index}>
-                <div className="card">
+                <div style={{ height: "100%" }} className="card">
                   <div className="icon">{icon}</div>
                   <h4 className="title">{title}</h4>
                   <div className="flexible">
                     <p>{desc}</p>
                   </div>
                   <div className="service-btn">
-                    <a href="https://www.unifiedinfotech.net/services/web-development-company/">
-                      {link}
-                    </a>
+                    <a href="/">{link}</a>
                   </div>
                 </div>
               </Column>

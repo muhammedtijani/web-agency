@@ -13,9 +13,9 @@ const Home = () => {
       <Hero style={{ display: "block" }} />
       <Count />
       <HomeWelcome />
-      {/*<HalfSection name="Core" title="services" />
+      <HalfSection name="Core" title="services" />
       <HomeService />
-      <HalfSection name="Portfolio that" title="speak!" />
+      {/*<HalfSection name="Portfolio that" title="speak!" />
       <CaseStudies />
       <Process /> */}
     </>

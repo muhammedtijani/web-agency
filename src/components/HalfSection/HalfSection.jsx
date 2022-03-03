@@ -1,21 +1,21 @@
 import { Wrapper } from "./HalfSection";
-import { Row, Column } from "../../globalStyles";
+import { Column } from "../../globalStyles";
 
-const HalfSection = (props) => {
+const HalfSection = ({ name, title }) => {
   return (
     <Wrapper>
-      <Row>
+      <div className="half-section-row">
         <Column>
           <div className="half-section-black">
-            <h3>{props.name}</h3>
+            <h3>{name}</h3>
           </div>
         </Column>
         <Column>
           <div className="half-section-white">
-            <h3>{props.title}</h3>
+            <h3>{title}</h3>
           </div>
         </Column>
-      </Row>
+      </div>
     </Wrapper>
   );
 };

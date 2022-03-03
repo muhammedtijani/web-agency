@@ -23,9 +23,10 @@ export const Wrapper = styled.section`
     display: flex;
     width: 100%;
     position: relative;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-bottom: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    align-self: stretch;
   }
 
   .card {
@@ -35,8 +36,9 @@ export const Wrapper = styled.section`
     padding: 40px 40px 90px 40px;
     background-color: #fff;
     box-shadow: 0 0 15px rgb(0 0 0 / 2%);
-    -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+
     width: 100%;
   }
 
@@ -66,5 +68,20 @@ export const Wrapper = styled.section`
     width: 100%;
     max-width: 200px;
     margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 640px) {
+    .service-container {
+      max-width: 1140px;
+    }
+    .card {
+      padding: 40px 40px 90px 40px;
+    }
+
+    .column-box-item {
+      padding-right: 25px;
+      padding-left: 25px;
+      margin-bottom: 50px;
+    }
   }
 `;

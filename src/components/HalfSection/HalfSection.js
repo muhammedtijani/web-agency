@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   display: block;
+  .half-section-row {
+    display: flex;
+    flex-direction: row;
+  }
   h3 {
     font-family: "CircularStd";
-    font-size: 60px;
+    font-size: 30px;
     font-weight: bold;
     line-height: 1.31;
     text-align: right;
@@ -23,6 +27,12 @@ export const Wrapper = styled.section`
     padding: 2% 15px 2% 10px;
     h3 {
       text-align: left !important;
+    }
+  }
+
+  @media screen and (min-width: 640px) {
+    h3 {
+      font-size: 60px;
     }
   }
 `;

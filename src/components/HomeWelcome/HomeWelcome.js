@@ -13,7 +13,6 @@ export const Wrapper = styled.section`
     flex-wrap: wrap;
     width: 100%;
     padding: 0 15px;
-    margin-bottom: 40px;
   }
 
   .title {
@@ -40,6 +39,7 @@ export const Wrapper = styled.section`
   @media screen and (min-width: 640px) {
     .home-welcome-row {
       flex-wrap: nowrap;
+      margin-bottom: 40px;
     }
 
     .home-welcome-column {

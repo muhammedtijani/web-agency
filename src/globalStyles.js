@@ -12,7 +12,11 @@ const GlobalSyle = createGlobalStyle`
 export const Container = styled.div`
   max-width: 1450px;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 640px) {
+    padding-bottom: 50px;
+  }
 `;
 
 export const Row = styled.div`
