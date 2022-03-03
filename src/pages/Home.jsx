@@ -15,9 +15,9 @@ const Home = () => {
       <HomeWelcome />
       <HalfSection name="Core" title="services" />
       <HomeService />
-      {/*<HalfSection name="Portfolio that" title="speak!" />
+      <HalfSection name="Portfolio that" title="speak!" />
       <CaseStudies />
-      <Process /> */}
+      {/* <Process /> */}
     </>
   );
 };

@@ -17,6 +17,10 @@ export const Wrapper = styled.section`
     padding-top: 0;
     padding-bottom: 0;
   }
+  .case-studies-thumb {
+    display: flex;
+    flex-direction: row;
+  }
   .thumb-column {
     padding-left: 22px;
     padding-right: 22px;

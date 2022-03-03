@@ -10,9 +10,9 @@ const Process = () => {
         <h1>Our process</h1>
       </Container>
       {/* buttons */}
-      {/* <div className="wrapper black-background">
+      <div className="wrapper black-background">
         {processData.map((el, index) => (
-          <div className="container">
+          <div className="container" key={index}>
             <img src={el.image} alt={el.title} />
             <div>
               <h3 className="title">{el.title}</h3>
@@ -21,7 +21,7 @@ const Process = () => {
             <buttons>contact us</buttons>
           </div>
         ))}
-      </div> */}
+      </div>
     </Wrapper>
   );
 };

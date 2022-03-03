@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
 
   .service-container {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,6 +40,9 @@ export const Wrapper = styled.section`
     -webkit-transition: all 0.4s ease-in-out;
 
     width: 100%;
+    p {
+      font-size: 16px;
+    }
   }
 
   .icon {
@@ -70,9 +73,10 @@ export const Wrapper = styled.section`
     margin-bottom: 40px;
   }
 
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 780px) {
     .service-container {
       max-width: 1140px;
+      padding-bottom: 100px;
     }
     .card {
       padding: 40px 40px 90px 40px;

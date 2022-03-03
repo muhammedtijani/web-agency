@@ -39,24 +39,21 @@ export const data = [
   },
 ];
 
-export const sliderSettings = {
-  arrows: false,
-  slidesToShow: 1,
-  focusOnselect: false,
-  accessability: false,
-  responsive: [
-    {
-      breakpoint: 1280,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-
-    {
-      breakpoint: 900,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
-};
+export const thumbs = [
+  {
+    img: "https://www.unifiedinfotech.net/assets/images/Clutch-Openreel@3x.png",
+  },
+  {
+    img: "https://www.unifiedinfotech.net/assets/images/Clutch-Largo@3x.png",
+  },
+  {
+    img: "https://www.unifiedinfotech.net/assets/images/Clutch-Houselab@3x.png",
+  },
+  {
+    img: "https://www.unifiedinfotech.net/assets/images/Clutch-Oota@3x.png",
+  },
+  {
+    img:
+      "https://www.unifiedinfotech.net/assets/images/Clutch-Londonrag@3x.png",
+  },
+];

@@ -18,7 +18,7 @@ export const Wrapper = styled.section`
   .half-section-black {
     color: #fff;
     background-color: #000;
-    padding: 2% 15px 2% 10px;
+    padding: 1.5% 10px 2% 10px;
   }
 
   .half-section-white {
@@ -32,7 +32,7 @@ export const Wrapper = styled.section`
 
   @media screen and (min-width: 640px) {
     h3 {
-      font-size: 60px;
+      font-size: 48px;
     }
   }
 `;

@@ -1,4 +1,4 @@
-import { Container, Row, Column } from "../../globalStyles";
+import { Container, Column } from "../../globalStyles";
 import OpenReel from "../../assets/images/Clutch-Openreel@3x.png";
 import OOTA from "../../assets/images/Clutch-Oota@3x.png";
 import Lond from "../../assets/images/Clutch-Londonrag@3x.png";
@@ -9,7 +9,7 @@ const CaseStudiesThumb = () => {
   return (
     <div className="thumb-wrapper">
       <Container className="thumb-container">
-        <Row>
+        <div className="case-studies-thumb">
           <Column className="thumb-column">
             <div className="pic">
               <img src={OpenReel} alt="OpenReel" />
@@ -35,7 +35,7 @@ const CaseStudiesThumb = () => {
               <img src={Lond} alt="Lond" />
             </div>
           </Column>
-        </Row>
+        </div>
       </Container>
     </div>
   );
