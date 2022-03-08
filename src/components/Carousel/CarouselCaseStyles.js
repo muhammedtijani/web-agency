@@ -151,13 +151,12 @@ export const TextWrapper = styled.div`
     margin-bottom: 20px;
   }
   h3 {
-    margin-bottom: 30px;
-    font-size: 30px;
+    margin-bottom: 20px;
+    font-size: 28px;
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.2;
   }
   p {
-    margin-bottom: 38px;
     line-height: 1.56;
   }
 
@@ -220,6 +219,15 @@ export const TextWrapper = styled.div`
   @media screen and (min-width: 769px) {
     flex: 0 0 50%;
     max-width: 50%;
+    h3 {
+      margin-bottom: 30px;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    p {
+      margin-bottom: 38px;
+    }
     .btn-carousel {
       font-size: 18px;
     }

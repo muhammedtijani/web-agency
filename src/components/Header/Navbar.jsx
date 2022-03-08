@@ -22,6 +22,7 @@ const Navbar = () => {
       <div className="nav-center">
         <div className="nav-header">
           <Logo />
+
           <button className="btn toggle-btn" onClick={openSidebar}>
             <FaBars />
           </button>

@@ -86,6 +86,10 @@ export const Button = styled.button`
       color: #000;
     }
   }
+
+  &.alt-border-white {
+    border: 2px solid #fff;
+  }
 `;
 
 export default GlobalSyle;

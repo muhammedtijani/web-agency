@@ -17,7 +17,7 @@ const Home = () => {
       <HomeService />
       <HalfSection name="Portfolio that" title="speak!" />
       <CaseStudies />
-      {/* <Process /> */}
+      <Process />
     </>
   );
 };
