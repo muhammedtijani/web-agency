@@ -74,4 +74,23 @@ export const HeroSection = styled.section`
       }
     }
   }
+
+  @media screen and (min-width: 768px) {
+    .hero-content-wrapper {
+      padding: 0 5px;
+      .hero-title {
+        font-size: 46px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .hero-content-wrapper {
+      max-width: 75%;
+
+      .hero-title {
+        font-size: 48px;
+      }
+    }
+  }
 `;

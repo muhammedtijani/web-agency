@@ -5,7 +5,7 @@ import homeWelcomePic from "../../assets/images/New-Home-Welcome-Image.jpg";
 const HomeWelcome = () => {
   return (
     <Wrapper>
-      <Container>
+      <div className="container">
         <div className="home-welcome-row">
           <div className="home-welcome-column">
             <div className="desc-wrap">
@@ -33,7 +33,7 @@ const HomeWelcome = () => {
             <img src={homeWelcomePic} alt="homepic" />
           </div>
         </div>
-      </Container>
+      </div>
     </Wrapper>
   );
 };

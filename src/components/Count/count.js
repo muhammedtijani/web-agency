@@ -50,7 +50,7 @@ const Wrapper = styled.div`
       }
     }
 
-    @media screen and (min-width: 990px) {
+    @media screen and (min-width: 1024px) {
       flex-direction: row;
       flex-wrap: nowrap;
     }

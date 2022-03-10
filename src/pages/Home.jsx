@@ -5,6 +5,7 @@ import HalfSection from "../components/HalfSection/HalfSection.jsx";
 import Hero from "../components/Hero/Hero";
 import HomeService from "../components/HomeServices/HomeService.jsx";
 import HomeWelcome from "../components/HomeWelcome/HomeWelcome.jsx";
+import OurExpertise from "../components/OurExpertise/OurExpertise.jsx";
 import Process from "../components/Process/Process.jsx";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <HalfSection name="Portfolio that" title="speak!" />
       <CaseStudies />
       <Process />
+      <OurExpertise />
     </>
   );
 };

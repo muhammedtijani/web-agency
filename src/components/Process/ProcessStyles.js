@@ -2,21 +2,25 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-bottom: 108px;
-  position: relative;
 
-  &:before {
-    background-color: #000;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    content: "";
-    width: calc(50% + 340px);
+  margin-bottom: 108px;
+
+  .process-wrapper {
+    position: relative;
+    width: 100%;
+    &:before {
+      background-color: #000;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      content: "";
+      width: calc(50% + 340px);
+    }
   }
   .container {
     width: 100%;
@@ -50,12 +54,12 @@ export const Wrapper = styled.section`
   }
   .tabs {
     width: 100%;
-    padding: 12px 15px;
+    padding: 10px 8px;
     display: block;
     background-color: white;
     border: none;
     border-left: 1px solid #e6e6e6;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 28px;
     text-align: left;
@@ -156,7 +160,7 @@ export const Wrapper = styled.section`
     .tabs {
       width: 100%;
       padding: 18px 25px 18px 25px;
-
+      font-size: 24px;
       background-color: transparent;
     }
     .active-content {

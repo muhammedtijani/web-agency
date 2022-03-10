@@ -5,6 +5,12 @@ export const Wrapper = styled.section`
   align-items: center;
   justify-content: center;
 
+  .container {
+    max-width: 1450px;
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
   .home-welcome-row {
     display: flex;
     align-items: center;
@@ -34,6 +40,13 @@ export const Wrapper = styled.section`
   .btn-home-welcome {
     max-width: 300px;
     margin-bottom: 40px;
+  }
+
+  .pic-wrap {
+    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 
   @media screen and (min-width: 640px) {
