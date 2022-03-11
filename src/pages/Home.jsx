@@ -7,6 +7,7 @@ import HomeService from "../components/HomeServices/HomeService.jsx";
 import HomeWelcome from "../components/HomeWelcome/HomeWelcome.jsx";
 import OurExpertise from "../components/OurExpertise/OurExpertise.jsx";
 import Process from "../components/Process/Process.jsx";
+import Testimonials from "../components/Testimonials/Testimonials.jsx";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <CaseStudies />
       <Process />
       <OurExpertise />
+      <Testimonials />
     </>
   );
 };
